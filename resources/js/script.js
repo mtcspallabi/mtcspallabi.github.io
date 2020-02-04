@@ -121,4 +121,91 @@ $(document).ready(function(){
         }
     });
     
+    /* Image popup  gallery  by magnific pop */
+    
+    $('.gallery-photo').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Loading image #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+        callbacks: {
+            elementParse: function(item) {
+              // Function will fire for each target element
+              // "item.el" is a target DOM element (if present)
+              // "item.src" is a source that you may modify
+              if(item.src.includes("youtube")){
+                  this.type = 'iframe';
+              }
+              console.log(item); // Do whatever you want with "item" object
+            }
+          },
+		image: {
+			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+			titleSrc: function(item) {
+				return item.el.attr('title') + '<small>by MTC School</small>';
+			}
+		}
+	});
+    
+    
+    
+    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+
+		fixedContentPos: false
+	});  
+    
+    /*
+    
+    $('.section-gallery').magnificPopup({
+    items: [
+      {
+        src: 'resources/img/gallery-1.jpg',
+        title: 'School Coridor'
+      },
+      {
+        src: 'resources/img/gallery-2.jpg',
+        title: 'Sisimpur Gift Book'
+      },
+      {
+        src: 'resources/img/mtcs-1.jpg',
+        title: 'Our Campus'
+      },
+      {
+        src: 'https://www.youtube.com/watch?v=tdSB8Zyzz7s',
+        type: 'iframe' // this overrides default type
+      },
+      {
+        src: 'resources/img/gallery-7.jpg',
+        title: 'Annual Sports Ceremony'
+      },
+      {
+        src: 'resources/img/gallery-6.jpg',
+        title: 'Annual Sports Ceremony'
+      },
+      {
+        src: 'resources/img/gallery-8.jpg',
+        title: 'Annual Closing Ceremony'
+      },
+      {
+         src: 'resources/img/gallery-7.jpg',
+        title: 'Annual Sports Ceremony'
+      }     
+      
+    ],
+    gallery: {
+      enabled: true
+    },
+    type: 'image' // this is a default type
+}); */
+    
 });

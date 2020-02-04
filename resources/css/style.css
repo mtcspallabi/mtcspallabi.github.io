@@ -304,7 +304,7 @@ header {
     background-color: rgba(255, 255, 255, 0.98);
     -webkit-box-shadow: 0 2px 2px #efefef;
     box-shadow: 0 2px 2px #efefef;
-    z-index: 9999;
+    z-index: 1000;
 }
 
 .sticky .main-nav {
@@ -361,6 +361,7 @@ header {
     margin: 0;
     overflow: hidden;
     background-color: #000;
+    cursor: pointer;
 }
 
 .gallery-photo img {
@@ -679,3 +680,34 @@ js--wp-3 {
 .js--wp-3.animated {
     opacity: 1;
 }
+
+/**
+ * Simple fade transition for magnific popup
+ */
+.mfp-fade.mfp-bg {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}
+
+

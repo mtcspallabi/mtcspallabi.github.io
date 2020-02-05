@@ -151,7 +151,29 @@ $(document).ready(function(){
 				return item.el.attr('title') + '<small>by MTC School</small>';
 			}
 		}
-	});   
+	});
+    
+    /*  Sending email */
+    
+    $('#btnSubmit').on('click', function(event) {
+        event.preventDefault();
+        const mailFrom = $('#email').val();
+        const mailTo = 'alamnr@gmail.com';
+            const name = $('#name').val();
+            const howFindUs = $('#find-us').val(); 
+            const message = $('#message').val();
+            const newsLetter = $('#news').val();
+            console.log( mailFrom + "   " + name + "  " + howFindUs  +  "  "  +  message +  " " + newsLetter);
+            const subject = "Guardian's Opinion";
+            const body = `Hi, \r\n
+                            It's me ${name}. Here is my message for you - ${message} \r\n
+
+                            Thanking You \r\n
+                            Name: ${name} , Email: ${mailFrom} ,\r\n
+                            How find : ${howFindUs}, NewsLetter : ${newsLetter} `;
+            window.open(`mailto:${mailTo}?subject=${subject}&body=` + encodeURIComponent(body));
+			
+    });
    
     
 });

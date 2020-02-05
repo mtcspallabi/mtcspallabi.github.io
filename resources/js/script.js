@@ -174,6 +174,13 @@ $(document).ready(function(){
             window.open(`mailto:${mailTo}?subject=${subject}&body=` + encodeURIComponent(body));
 			
     });
-   
+    
+    /* Multi lingual */
+    
+    $('#lang').on('change',function(){
+        console.log($('#lang').val());
+        i18next.changeLanguage($('#lang').val());
+    })
+
     
 });

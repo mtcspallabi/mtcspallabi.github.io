@@ -57,10 +57,15 @@
                <img src="resources/img/logo-white.png" alt="mcts logo" class="logo">
                <img src="resources/img/logo-black.png" alt="mcts logo" class="logo-black">
                <ul class="main-nav js--main-nav">
-                   <li><a href="#features">Our features</a></li>
-                   <li><a href="#gallery">Gallery</a></li>
-                   <li><a href="#location">Our location</a></li>
-                   <li><a href="#admissionInfo">Admission information</a></li>
+                   <li><a href="#features" id="featureMenuItem">Our features</a></li>
+                   <li><a href="#gallery" id="galleryMenuItem">Gallery</a></li>
+                   <li><a href="#location" id="locationMenuItem">Our location</a></li>
+                   <li><a href="#admissionInfo" id="admissionInfoMenuItem">Admission information</a></li>
+                   <li><select name="lang" id="lang" required>                               
+                           <option value="bn" selected>বাঙলা</option>
+                           <option value="en" >English</option>
+                       </select>
+                   </li>
                </ul>
                <a  class="mobile-nav-icon js--nav-icon">
                    <i class="icon ion-md-menu"></i>
@@ -420,7 +425,13 @@
         <script src="vendors/js/gmaps.min.js"></script>
         <!-- Magnific Popup core JS file -->
         <script src="vendors/js/jquery.magnific-popup.min.js"></script>
+        
+        <script src="vendors/js/i18next/i18next.js"></script>
+        <script src="vendors/js/i18next/i18nextXHRBackend.js"></script>
+        <script src="vendors//js/i18next/i18nextBrowserLanguageDetector.js"></script>
+        <script src="resources/js/lang.js"></script>
         <script src="resources/js/script.js"></script>
+        
         
     </body>
     

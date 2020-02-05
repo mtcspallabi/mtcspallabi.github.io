@@ -176,7 +176,7 @@ $(document).ready(function(){
     });
     
     /* Multi lingual */
-    
+    i18next.changeLanguage($('#lang').val());
     $('#lang').on('change',function(){
         console.log($('#lang').val());
         i18next.changeLanguage($('#lang').val());

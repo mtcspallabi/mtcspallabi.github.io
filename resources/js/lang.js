@@ -3,7 +3,7 @@ i18next
   .use(i18nextXHRBackend)
   .use(i18nextBrowserLanguageDetector)
   .init({
-    fallbackLng: 'bn',
+    fallbackLng: 'en',
     debug: true,
     ns: ['special', 'common'],
     defaultNS: 'special',

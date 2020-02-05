@@ -565,6 +565,7 @@ textarea {
 
 #lang {
     padding: 0px;
+    font-size: 80%;
 }
 
 input[type=checkbox] {

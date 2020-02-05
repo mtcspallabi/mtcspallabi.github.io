@@ -18,7 +18,7 @@ i18next
               button_2: 'Show me more'
           },
           sectionFeature:{
-              feature_h2_1: 'Children must be taught how to think, not what to think<cite> &mdash; Margaret Mead</cite>',
+              feature_h2_1: 'Children must be taught how to think, not what to think<cite> &mdash; <a href="https://en.wikipedia.org/wiki/Margaret_Mead"                target="_blank">Margaret Mead</a></cite>',
               feature_p_1: 'Hello, we beleive in quality education for your child to develop his/her thought process. We know you\'re always thoughtful                 about your child education . So let us take care of that, we\'re really good at it, we promise!',
               feature_h3_1: 'Play ground and auditorium',
               feature_p_2: 'We have nice playground and auditorium in side. We beleive your child like to play than reading all time. We encourage them                 to play and perform.',
@@ -54,7 +54,7 @@ i18next
               button_2: 'বিস্তারিত দেখুন'
           },
           sectionFeature:{
-              feature_h2_1: 'বাচ্চাদের অবশ্যই কীভাবে ভাবতে হবে তা শেখানো উচিত, কী ভাবতে হবে তা নয়<cite> &mdash; মার্গারেট মিড</cite>',
+              feature_h2_1: 'বাচ্চাদের অবশ্যই কীভাবে ভাবতে হবে তা শেখানো উচিত, কী ভাবতে হবে তা নয়<cite> &mdash; <a href="https://en.wikipedia.org/wiki/Margaret_Mead" target="_blank"> মার্গারেট মিড </a></cite>',
               feature_p_1: 'আমরা আপনার সন্তানের  মেধা\'র সুষম  বিকাশের জন্য মানসম্মত শিক্ষার প্রতি আগ্রহী। আমরা জানি আপনি সর্বদা আপনার শিশু শিক্ষার বিষয়ে চিন্তাশীল। সুতরাং                     এতদ্ববিষয়ে আমরা শিক্ষার্থীদের বিশেষ যত্ন নিয়ে থাকি  এবং আমরা  প্রতিশ্রুতিবদ্ধ!',
               feature_h3_1: 'খেলার মাঠ এবং মিলনায়তন',
               feature_p_2: 'আমাদের স্কুল চত্বরে সুন্দর খেলার মাঠ এবং মিলনায়তন রয়েছে। আমরা বিশ্বাস করি আপনার শিশুটি  পড়ার চেয়ে খেলতে বেশী পছন্দ করে। আমরা তাদের  শিক্ষার পাশাপাশি                খেলাধুলা এবং ছবি আঁকা, নাচ ও গান করতে উত্সাহিত করি ।',

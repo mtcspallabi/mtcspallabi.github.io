@@ -151,8 +151,10 @@
         text-align: center;
     }
 
-        
-
+    footer p,
+    .footer-nav {
+        line-height: 140%;
+    } 
 }
 
 
@@ -163,4 +165,9 @@
     .hero-text-box a:last-of-type {
         margin-top: 10px;
     }
+    footer p,
+    .footer-nav {
+        line-height: 140%;
+    }  
+    
 }

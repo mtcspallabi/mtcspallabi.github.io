@@ -138,11 +138,11 @@ $(document).ready(function(){
               // Function will fire for each target element
               // "item.el" is a target DOM element (if present)
               // "item.src" is a source that you may modify
-                console.log(item.src);
+                //console.log(item.src);
               if(item.src.includes("youtube")){
                   item.type = 'iframe';
               }
-              console.log(item); // Do whatever you want with "item" object
+              //console.log(item); // Do whatever you want with "item" object
             }
           },
 		image: {
@@ -163,7 +163,7 @@ $(document).ready(function(){
             const howFindUs = $('#find-us').val(); 
             const message = $('#message').val();
             const newsLetter = $('#news').val();
-            console.log( mailFrom + "   " + name + "  " + howFindUs  +  "  "  +  message +  " " + newsLetter);
+            //console.log( mailFrom + "   " + name + "  " + howFindUs  +  "  "  +  message +  " " + newsLetter);
             const subject = "Guardian's Opinion";
             const body = `Hi, \r\n
                             It's me ${name}. Here is my message for you - ${message} \r\n
@@ -178,7 +178,7 @@ $(document).ready(function(){
     /* Multi lingual */
     i18next.changeLanguage($('#lang').val());
     $('#lang').on('change',function(){
-        console.log($('#lang').val());
+        //console.log($('#lang').val());
         i18next.changeLanguage($('#lang').val());
     })
 

@@ -1,4 +1,4 @@
-console.log(i18next);
+//console.log(i18next);
 i18next
   .use(i18nextXHRBackend)
   .use(i18nextBrowserLanguageDetector)
@@ -56,7 +56,47 @@ i18next
                 testimonial_bq_3: 'Lorem ipsum dolor imit Lorem ipsum dolor imit Lorem ipsum dolor imit Lorem ipsum dolor imit Lorem ipsum dolor imit Lorem ipsum dolor imit Lorem ipsum dolor imit Lorem ipsum dolor',
                 testimonial_span_3: 'Subal Das'
                     
-            }
+            },
+            plan: {
+                plan_h2_1:'Admission information',
+                
+                plan1_h3_1: 'Play',
+                plan1_p_1:'Admission fees : &#2547; 12000/- BDT',
+                plan1_p_2:'Monthly fees : &#2547; 800/- BDT',
+                plan1_span_1:'Books, diary , exercise book, Id card included',
+                plan1_a_1: 'Contact now',
+            
+                plan2_h3_1: 'Nursery',
+                plan2_p_1:'Admission fees : &#2547; 12000/- BDT',
+                plan2_p_2:'Monthly fees : &#2547; 800/- BDT',
+                plan2_span_1:'Books, diary , exercise book, Id card included',
+                plan2_a_1: 'Contact now',
+            
+                plan3_h3_1: 'Singing / Dancing / Drawing',
+                plan3_p_1:'Admission fees : &#2547; 1200/- BDT',
+                plan3_p_2:'Monthly fees : &#2547; 300/- BDT',
+                plan3_span_1:'Drawing board, cartidge paper, pencil, anklet should be brought by student ',
+                plan3_a_1: 'Contact now'
+                
+            
+        },
+        form: {
+            form_h2_1: 'We\'re happy to hear from you',
+            form_name:'Name',
+            form_email:'Email',
+            form_find: 'How did you find us?',
+            form_opinion: 'Your query / opinion',
+            form_news: 'Newsletter?',
+            form_span_1: ' Yes, please ',
+            btnSubmit: 'Send it!'
+        },
+        footer : {
+            footer_a_1: 'About Us',
+            footer_a_2: 'Contact Us',
+            footer_a_3: 'Notice Board',
+            footer_a_4: 'Teachers Panel',
+            footer_p_1: 'Copyright &copy; 2020 by MTCS. All rights reserved. Courtesy- Jonas Schedmann.'
+        }
         },
         common: {
           button: {
@@ -120,7 +160,47 @@ i18next
                 testimonial_bq_3: 'যে-বই জুড়ে সূর্য ওঠে পাতায় পাতায় গোলাপ ফোটে সে-বই তুমি পড়বে। যে-বই জ্বালে ভিন্ন  আলো তোমায় শেখায় বাসতে ভালো সে-বই তুমি পড়বে। যে-বই তোমায় দেখায় ভয় সেগুলো কোন বই-ই নয় সে-বই তুমি পড়বে না। যে-বই তোমায় অন্ধ করে যে-বই তোমায় বন্দী করে সে-বই তুমি ছুঁবেই না। - \'হুমায়ুন আজাদ\'',
                 testimonial_span_3: 'সুবল দাশ'
                     
-            }
+            },
+             plan :{
+                plan_h2_1:'ভর্তির তথ্য',
+                
+                plan1_h3_1: 'প্লে',
+                plan1_p_1:'ভর্তি ফি :  &#2547; ১২০০০/- ',
+                plan1_p_2:'মাসিক ফি :  &#2547; ৮০০/- ',
+                plan1_span_1:'বই, ডায়েরি, অনুশীলন খাতা , আইডি কার্ড অন্তর্ভুক্ত',
+                plan1_a_1: 'এখনই যোগাযোগ করুন',
+            
+                plan2_h3_1: 'নার্সারী',
+                plan2_p_1:'ভর্তি ফি :  &#2547; ১২০০০/- ',
+                plan2_p_2:'মাসিক ফি :  &#2547; ৮০০/- ',
+                plan2_span_1:'বই, ডায়েরি, অনুশীলন খাতা , আইডি কার্ড অন্তর্ভুক্ত',
+                plan2_a_1: 'এখনই যোগাযোগ করুন',
+            
+                plan3_h3_1: 'গান / নাচ / ছবি আঁকা',
+                plan3_p_1:'ভর্তি ফি :  &#2547; ১২০০/-',
+                plan3_p_2:'মাসিক ফি :  &#2547; ৩০০/- ',
+                plan3_span_1:'অঙ্কন বোর্ড, কার্তুজ পেপার, পেন্সিল,  ঘুঙ্গুর শিক্ষার্থী নিয়ে আসবে ',
+                plan3_a_1: 'এখনই যোগাযোগ করুন'
+                
+            
+        },
+        form: {
+            form_h2_1: 'আপনাদের মতামত ও পরামর্শ আমরা জানতে আগ্রহী',
+            form_name:'নাম',
+            form_email:'ইমেল',
+            form_find: 'আপনি আমাদের কিভাবে খুঁজে পেলেন?',
+            form_opinion: 'আপনার প্রশ্ন / মতামত',
+            form_news: 'নিউজলেটার?',
+            form_span_1: ' হ্যাঁ ',
+            btnSubmit: 'প্রেরন করুন!'
+        },
+        footer : {
+            footer_a_1: 'আমাদের সম্পর্কে',
+            footer_a_2: 'যোগাযোগ করুন',
+            footer_a_3: 'নোটিশ বোর্ড',
+            footer_a_4: 'শিক্ষক প্যানেল',
+            footer_p_1: 'কপিরাইট &copy; ২০২০ বাই এম.টি.সি.এস । সর্ব সত্ব সংরক্ষিত । সৌজন্যে- জোনাস শিডম্যান ।'
+        }
         },
         common: {
           button: {
@@ -204,9 +284,54 @@ function updateContent() {
     
     document.getElementById('testimonial_bq_3').innerHTML = i18next.t('special:testimonial.testimonial_bq_3');
     document.getElementById('testimonial_span_3').innerHTML = i18next.t('special:testimonial.testimonial_span_3');
+    
+     /* ----  Admission Info ----- */
+    
+    document.getElementById('plan_h2_1').innerHTML = i18next.t('special:plan.plan_h2_1');
+    
+    document.getElementById('plan1_h3_1').innerHTML = i18next.t('special:plan.plan1_h3_1');
+    document.getElementById('plan1_p_1').innerHTML = i18next.t('special:plan.plan1_p_1');
+    document.getElementById('plan1_p_2').innerHTML = i18next.t('special:plan.plan1_p_2');
+    document.getElementById('plan1_span_1').innerHTML = i18next.t('special:plan.plan1_span_1');
+    document.getElementById('plan1_a_1').innerHTML = i18next.t('special:plan.plan1_a_1');
+    
+    document.getElementById('plan2_h3_1').innerHTML = i18next.t('special:plan.plan2_h3_1');
+    document.getElementById('plan2_p_1').innerHTML = i18next.t('special:plan.plan2_p_1');
+    document.getElementById('plan2_p_2').innerHTML = i18next.t('special:plan.plan2_p_2');
+    document.getElementById('plan2_span_1').innerHTML = i18next.t('special:plan.plan2_span_1');
+    document.getElementById('plan2_a_1').innerHTML = i18next.t('special:plan.plan2_a_1');
+    
+    
+    document.getElementById('plan3_h3_1').innerHTML = i18next.t('special:plan.plan3_h3_1');
+    document.getElementById('plan3_p_1').innerHTML = i18next.t('special:plan.plan3_p_1');
+    document.getElementById('plan3_p_2').innerHTML = i18next.t('special:plan.plan3_p_2');
+    document.getElementById('plan3_span_1').innerHTML = i18next.t('special:plan.plan3_span_1');
+    document.getElementById('plan3_a_1').innerHTML = i18next.t('special:plan.plan3_a_1');
+    
+    /* ----  Form ----- */
+    
+    document.getElementById('form_h2_1').innerHTML = i18next.t('special:form.form_h2_1');
+    
+    document.getElementById('form_name').innerHTML = i18next.t('special:form.form_name');
+    document.getElementById('form_email').innerHTML = i18next.t('special:form.form_email');
+    document.getElementById('form_find').innerHTML = i18next.t('special:form.form_find');
+    document.getElementById('form_opinion').innerHTML = i18next.t('special:form.form_opinion');
+    document.getElementById('form_news').innerHTML = i18next.t('special:form.form_news');
+    document.getElementById('form_span_1').innerHTML = i18next.t('special:form.form_span_1');
+    document.getElementById('btnSubmit').value = i18next.t('special:form.btnSubmit');
+    
+    /* ----  Footer ----- */
+    
+    document.getElementById('footer_a_1').innerHTML = i18next.t('special:footer.footer_a_1');
+    document.getElementById('footer_a_2').innerHTML = i18next.t('special:footer.footer_a_2');
+    document.getElementById('footer_a_3').innerHTML = i18next.t('special:footer.footer_a_3');
+    document.getElementById('footer_a_4').innerHTML = i18next.t('special:footer.footer_a_4');
+    document.getElementById('footer_p_1').innerHTML = i18next.t('special:footer.footer_p_1');
+    
+    
   
-  console.log(`detected user language: "${i18next.language}"  --> loaded languages: "${i18next.languages.join(', ')}"`);
-}
+  //console.log(`detected user language: "${i18next.language}"  --> loaded languages: "${i18next.languages.join(', ')}"`);
+} 
 
 function changeLng(lng) {
   i18next.changeLanguage(lng);

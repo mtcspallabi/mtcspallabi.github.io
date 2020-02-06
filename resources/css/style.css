@@ -87,8 +87,9 @@ section {
     display: inline-block;
     width:30px;
     text-align: center;
-    color: #e67e22;
-    font-size: 120%;
+/*    color: #e67e22;*/
+    color: #000;
+    font-size: 115%;
     margin-right: 10px;
     
     /* secret to align text and icon */
@@ -550,6 +551,11 @@ blockquote:before {
 .plan-box div:last-child {
     text-align: center;
     border: 0;
+}
+
+.plan-box div:nth-child(2) {
+    font-size: 75%;
+    line-height: 140%;
 }
 
 .plan-box div:first-child {

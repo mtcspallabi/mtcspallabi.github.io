@@ -87,8 +87,8 @@ section {
     display: inline-block;
     width:30px;
     text-align: center;
-/*    color: #e67e22;*/
-    color: #000;
+    color: #e67e22;
+/*    color: #000;*/
     font-size: 115%;
     margin-right: 10px;
     
@@ -226,9 +226,9 @@ header {
     width: 65%;
     overflow: hidden;
     top: 50%;
-    left: 65%;
-    -webkit-transform: translate(-48%,-50%);
-    transform: translate(-48%,-50%);   
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);   
 }
 
 #school-name {

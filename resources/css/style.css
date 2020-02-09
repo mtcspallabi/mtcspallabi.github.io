@@ -739,3 +739,52 @@ js--wp-3 {
 }
 
 
+
+/**
+ *  Notice
+ */
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 40px;
+  width: auto;
+  max-width: 80%;
+  margin: 20px auto;
+/*  text-align: center;*/
+  border: 2px solid #DBDBDB;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+input[type=date] {
+    padding: 3px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.notice h3:after {
+    display: block;
+    height: 2px;
+    background-color: #e4e4e4;
+    content: "";
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 10px;    
+}
+
+.search-center {
+    text-align: center;
+}
+
+.notice {
+/*  border-bottom: 3px solid #e4e4e4;*/
+    border-bottom: 3px solid tranparent;
+  padding: 10px 15px;
+}
+
+
+
+
+

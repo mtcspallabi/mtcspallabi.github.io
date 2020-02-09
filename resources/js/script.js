@@ -181,6 +181,21 @@ $(document).ready(function(){
         //console.log($('#lang').val());
         i18next.changeLanguage($('#lang').val());
     })
+    
+    
+    /*  Notice Board */
+    
+    $('#footer_a_3').magnificPopup({
+    items: [
+      {
+        src: '#my-popup', // CSS selector of an element on page that should be used as a popup
+        type: 'inline'
+      }
+    ],
+    gallery: {
+      enabled: true
+    }
+});
 
     
 });

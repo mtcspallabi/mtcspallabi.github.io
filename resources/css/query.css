@@ -62,7 +62,10 @@
         width: 80%;
     }
     
-      
+    .search-center a {
+        margin-top: 5px;
+        vertical-align: middle;
+    }  
     
 }
 
@@ -166,6 +169,11 @@
     .footer-nav {
         line-height: 140%;
     } 
+    
+     .search-center input[type=date] {
+        margin-top: 5px;
+        padding: 2px;
+    }  
 }
 
 

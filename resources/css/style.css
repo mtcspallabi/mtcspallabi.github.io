@@ -786,7 +786,7 @@ input[type=date] {
 .popup-scroll {
   /* Overflow Scroll */
   overflow-y: scroll;
-  max-height: 300px;
+  max-height: 450px;
   padding:0 1em 0 0;
 }
 

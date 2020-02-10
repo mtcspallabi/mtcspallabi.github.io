@@ -749,7 +749,7 @@ js--wp-3 {
   background: #FFF;
   padding: 40px;
   width: auto;
-  max-width: 80%;
+  max-width: 90%;
   margin: 20px auto;
 /*  text-align: center;*/
   border: 2px solid #DBDBDB;
@@ -783,7 +783,12 @@ input[type=date] {
     border-bottom: 3px solid tranparent;
   padding: 10px 15px;
 }
-
+.popup-scroll {
+  /* Overflow Scroll */
+  overflow-y: scroll;
+  max-height: 300px;
+  padding:0 1em 0 0;
+}
 
 
 

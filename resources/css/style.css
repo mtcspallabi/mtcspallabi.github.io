@@ -738,7 +738,21 @@ js--wp-3 {
 	opacity: 0;
 }
 
-
+body {
+	-webkit-overflow-scrolling: touch;
+}
+body.mfp-active {
+	overflow: hidden;
+	-webkit-overflow-scrolling: auto;
+	width: 100%;
+	position: fixed;
+	overflow: auto;
+}
+body .mfp-wrap {
+	position: fixed;
+	overflow: auto;
+	top: 0 !important;
+}
 
 /**
  *  Notice

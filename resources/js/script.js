@@ -191,10 +191,14 @@ $(document).ready(function(){
         src: '#my-popup', // CSS selector of an element on page that should be used as a popup
         type: 'inline'
       }
-    ],
-    gallery: {
-      enabled: true
-    }
+    ],callbacks: {
+		beforeOpen: function() {
+			$('body').addClass('mfp-active');
+		},
+		beforeClose: function() {
+			$('body').removeClass('mfp-active');
+		}
+	}
 });
 
     

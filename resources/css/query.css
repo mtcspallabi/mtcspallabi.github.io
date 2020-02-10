@@ -174,7 +174,11 @@
      .search-center input[type=date] {
         margin-top: 5px;
         padding: 2px;
-    }  
+    }
+    .notice {
+      padding: 10px 0;
+    }
+        
 }
 
 

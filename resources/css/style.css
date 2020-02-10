@@ -795,13 +795,13 @@ input[type=date] {
 .notice {
 /*  border-bottom: 3px solid #e4e4e4;*/
     border-bottom: 3px solid tranparent;
-  padding: 10px 15px;
+  padding: 10px 35px;
 }
 .popup-scroll {
   /* Overflow Scroll */
   overflow-y: scroll;
   max-height: 450px;
-  padding:0 1em 0 0;
+  
 }
 
 

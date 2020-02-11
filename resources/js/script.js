@@ -145,6 +145,7 @@ $(document).ready(function(){
               //console.log(item); // Do whatever you want with "item" object
             }
           },
+         midClick: true,
 		image: {
 			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
 			titleSrc: function(item) {
@@ -182,24 +183,6 @@ $(document).ready(function(){
         i18next.changeLanguage($('#lang').val());
     })
     
-    
-    /*  Notice Board */
-    
-    $('#footer_a_3').magnificPopup({
-    items: [
-      {
-        src: '#my-popup', // CSS selector of an element on page that should be used as a popup
-        type: 'inline'
-      }
-    ],callbacks: {
-		beforeOpen: function() {
-			$('body').addClass('mfp-active');
-		},
-		beforeClose: function() {
-			$('body').removeClass('mfp-active');
-		}
-	}
-});
-
+   
     
 });

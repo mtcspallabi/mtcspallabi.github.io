@@ -429,11 +429,13 @@
             </div>
         </footer>
         
-        <div id="my-popup"  class="mfp-hide white-popup">
-         
+        <div id="notice-popup"  class="mfp-hide white-popup">
+                 
+                 
                <div class="row">
-                    <h2> Notice Board </h2>
+                    <h2> Notice Board </h2>                    
                </div>
+                         
 <!--
                 <div class="row">
 
@@ -449,55 +451,34 @@
                 </div>
 -->
                 <div class="popup-scroll">
-                     <div class="row">
-                   <div class="notice">
-                       <div class="search-center"><h3>Date: 09-Feb-2020</h3></div>
-                        <p>
-                            <i class="icon ion-checkmark-circled icon-small"></i>
-                            <span>quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto</span>
-                        </p>
-                        <br>
-                        <p>
-                            <i class="icon ion-checkmark-circled icon-small"></i>
-                            <span>quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto</span>
-                        </p>
-
-                   </div>
-                    </div>
-                   <div class="row">
-                   <div class="notice">
-                       <div class="search-center"><h3>Date: 09-Feb-2020</h3></div>
-                        <p>
-                            <i class="icon ion-checkmark-circled icon-small"></i>
-                            <span>quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto</span>
-                        </p>
-                        <br>
-                        <p>
-                            <i class="icon ion-checkmark-circled icon-small"></i>
-                            <span>quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto</span>
-                        </p>
-
-                   </div>
-                   
+                     
                 </div>
                 
-                <div class="row">
-                   <div class="notice">
-                       <div class="search-center"><h3>Date: 08-Feb-2020</h3></div>
-                        <p>
-                            <i class="icon ion-checkmark-circled icon-small"></i>
-                            <span>quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto</span>
-                        </p>
-                        
-
-                   </div>
-                   
-                </div>
-                </div>
+<!--
+                 <div class="addNoticeComponent">
+                     <div class="row notice">
+                         <div class="col span_1_of_3"><label for="dateInput">Select date :</label></div>
+                         <div class="col span_2_of_3"><input type="date" id="dateInput"></div>
+                     </div>
+                     <div class="row notice">
+                         <div class="col span_1_of_3"><label for="noticeText">Write notice :</label></div>
+                         <div class="col span_2_of_3"> 
+                             <textarea name="noticeText" id="editor" rows="10" cols="80">
+                                This is my textarea to be replaced with CKEditor.
+                             </textarea>
+                         </div>
+                     </div>
+                     <div class="row notice">
+                         <div class="col span_1_of_3">&nbsp</div>
+                         <div class="col span_2_of_3"><a href="#" class="btn btn-full" id="saveNotice_a_1" > Save </a></div>
+                     </div>      
+               </div>
+-->
                 
           
         </div>
         
+               
         <script src="vendors/js/jquery.min.js"></script>    
         <script src="vendors/js/respond.min.js"></script>
         <script src="vendors/js/html5shiv.min.js"></script>
@@ -511,8 +492,12 @@
         <script src="vendors/js/i18next/i18next.js"></script>
         <script src="vendors/js/i18next/i18nextXHRBackend.js"></script>
         <script src="vendors//js/i18next/i18nextBrowserLanguageDetector.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
+         <script src="https://cdn.ckeditor.com/ckeditor5/16.0.0/classic/ckeditor.js"></script>
+        
         <script src="resources/js/lang.js"></script>
-        <script src="resources/js/script.js"></script>
+        <script src="resources/js/script.js"></script>        
+        <script src="resources/js/notice.js"></script>
         
         
     </body>

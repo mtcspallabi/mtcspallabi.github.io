@@ -13,7 +13,7 @@ i18next
           title: '{{what}} in english',
           header:{
               dialogue_header: 'Your child, it\'s our responsibility to develop his/her intellect.',
-              school_name: 'Mother Teresa Catholic School',
+              school_name: 'Mother Teresa Catholic School, Estd-2011 .',
               button_1: 'I\'m interested',
               button_2: 'Show me more'
           },
@@ -43,7 +43,7 @@ i18next
           },
           location: {
               location_h2_1: 'We\'re currently at Pallabi, Mirpur, Dhaka.',
-              location_h3_1: '1/C & 1/D, Pallabi, Section-12, Mirpur, Dhaka-1216'
+              location_h3_1: '1/C & 1/B, Pallabi, Section-12, Mirpur, Dhaka-1216'
           },
             testimonial: {
                 testimonial_h2_1: 'Guardian\'s opinion about us.',
@@ -116,7 +116,7 @@ i18next
           title: '{{what}} in বাংলা',
           header:{
               dialogue_header: 'সন্তান আপনার, তার মেধা\'র সুষ্ঠ বিকাশের দায়িত্ব আমাদের।',
-              school_name:'মাদার তেরেজা কাথলিক স্কুল <cite>৷ স্থাপিত-২০০৯ ইং </cite>',
+              school_name:'মাদার তেরেজা কাথলিক স্কুল, স্থাপিত-২০১১ ইং ।',
               button_1: 'আমি আগ্রহী',
               button_2: 'বিস্তারিত দেখুন'
           },
@@ -146,7 +146,7 @@ i18next
           },
           location: {
               location_h2_1: 'আমাদের ক্যাম্পাস ঢাকার মিরপুরের পল্লবীতে অবস্থিত',
-              location_h3_1: '১ / সি ও ১ / ডি, পল্লবী, সেকশন-১২, মিরপুর, ঢাকা -১২১৬'
+              location_h3_1: '১ / সি ও ১ / বি, পল্লবী, সেকশন-১২, মিরপুর, ঢাকা -১২১৬'
               
           },
             testimonial: {

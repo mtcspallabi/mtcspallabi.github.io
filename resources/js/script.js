@@ -88,6 +88,24 @@ $(document).ready(function(){
         offset: '50%'   
     }); */
     
+      $('.js--wp-4').waypoint(function(direction){
+        $('.js--wp-4').addClass('animated fadeInDown');
+    },{
+        offset: '50%'   
+    });
+    
+      $('.js--wp-5').waypoint(function(direction){
+        $('.js--wp-5').addClass('animated fadeInUp');
+    },{
+        offset: '50%'   
+    });
+    
+      $('.js--wp-6').waypoint(function(direction){
+        $('.js--wp-6').addClass('animated fadeInDown');
+    },{
+        offset: '50%'   
+    });
+    
     /* Mobile Nav */
     
     $('.js--nav-icon').on('click', function(event) {

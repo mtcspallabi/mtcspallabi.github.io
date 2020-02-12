@@ -709,14 +709,20 @@ js--wp-3 {
     opacity: 1;
 }  */
 
-.js--wp-1 {
+.js--wp-1,
+.js--wp-4,
+.js--wp-5,
+.js--wp-6 {
     opacity: 0;
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
 }
 
 
-.js--wp-1.animated {
+.js--wp-1.animated,
+.js--wp-4.animated,
+.js--wp-5.animated,
+.js--wp-6.animated {
     opacity: 1;
 }
 

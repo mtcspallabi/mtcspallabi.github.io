@@ -812,7 +812,7 @@ input[type=date] {
 .notice {
 /*  border-bottom: 3px solid #e4e4e4;*/
     border-bottom: 3px solid tranparent;
-  padding: 10px 35px;
+    padding: 10px 35px;
 }
 .popup-scroll {
   /* Overflow Scroll */
@@ -823,6 +823,10 @@ input[type=date] {
 
 .addNoticeComponent {
     display: none;
+}
+
+.notice p {
+    line-height: 140%;
 }
 
 

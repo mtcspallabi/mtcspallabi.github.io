@@ -96,6 +96,9 @@ i18next
             footer_a_3: 'Notice Board',
             footer_a_4: 'Teachers Panel',
             footer_p_1: 'Copyright &copy; 2020 by MTCS. All rights reserved. Courtesy- Jonas Schedmann.'
+        },
+        notice : {
+            notice_h2_1:"Notice Board"
         }
         },
         common: {
@@ -200,6 +203,9 @@ i18next
             footer_a_3: 'নোটিশ বোর্ড',
             footer_a_4: 'শিক্ষক প্যানেল',
             footer_p_1: 'কপিরাইট &copy; ২০২০ , এম.টি.সি.এস.  কর্তৃক  সর্ব  সত্ব  সংরক্ষিত । সৌজন্যে - জোনাস শিডম্যান ।'
+        },
+        notice : {
+            notice_h2_1:"নোটিশ বোর্ড"
         }
         },
         common: {
@@ -328,7 +334,9 @@ function updateContent() {
     document.getElementById('footer_a_4').innerHTML = i18next.t('special:footer.footer_a_4');
     document.getElementById('footer_p_1').innerHTML = i18next.t('special:footer.footer_p_1');
     
+    /* ---- Notice ----*/
     
+    document.getElementById('notice_h2_1').innerHTML = i18next.t('special:notice.notice_h2_1');
   
   //console.log(`detected user language: "${i18next.language}"  --> loaded languages: "${i18next.languages.join(', ')}"`);
 } 

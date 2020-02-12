@@ -1,10 +1,11 @@
 var notices = [
-  {id:1, date:'02-FEB-2020',text:'quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto'  },
-    {id:2, date:'03-FEB-2020',text:'quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto'  },
-    {id:3, date:'04-FEB-2020',text:'quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto'  },
-    {id:4, date:'02-FEB-2020',text:'quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto'  }
+  {id:1, date:'02-FEB-2020',text:'এতদ্বারা  অত্র বিদ্যালয়ের সকল ছাত্র-শিক্ষক ও কর্মচারীদের অবগতির জন্য জানানো যাচ্ছে যে, আগামী রবিবার ০১ এপ্রিল-২০২০ তারিখ বাঙলা নববর্ষ ১লা বৈশাখ উপলক্ষে বিদ্যালয়ের সমগ্র কার্যক্রম বন্ধ থাকবে। সোমবার ২৭ ফেব্রুয়ারী-২০২০ থেকে বিদ্যালয় যথারীতি চলবে ।'  },
+    {id:2, date:'03-FEB-2020',text:'আগামী ২৬/০২/২০২০ খ্রিঃ তারিখ ৮ম শ্রেণির মডেল টেষ্টের ফলাফল প্রকাশ করা হবে।'  },
+    {id:3, date:'04-FEB-2020',text:'অত্র বিদ্যালয়ের শিক্ষার্থী এবং সন্মানিত অভিভাবক মন্ডলীদের বিশেষ অবগতির জন্য জানান যাচ্ছে যে নির্বাচনী পরীক্ষায় উত্তীর্ণ না হলে ২০২১ সালে অনুষ্ঠিত এস এস সি পরীক্ষায় অংশগ্রহণের লক্ষে ফরম পূরণ করা যাবে না। '  },
+    {id:4, date:'02-FEB-2020',text:'আগামী ১০/০২/২০২০ খ্রিঃ তারিখ আশুরা উপলক্ষে অত্র বিদ্যালয়ের পাঠদান কার্যক্রম বন্ধ থাকবে।'  },
+    {id:4, date:'02-FEB-2020',text:'যারা চলতি মাসের বেতন প্রদান করেন নাই তারা অনুগ্রহ করে বেতন পরিশোধ করবেন, ধন্যবাদ ।'  }
     
-];
+];  
 
 const months = [
   'JAN',

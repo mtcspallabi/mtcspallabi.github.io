@@ -693,7 +693,7 @@ footer p {
 /* Animation */
 /* ---------------------------------------------- */
 
-
+/*
 .js--wp-1,
 .js--wp-2,
 js--wp-3 {
@@ -707,7 +707,7 @@ js--wp-3 {
 .js--wp-2.animated,
 .js--wp-3.animated {
     opacity: 1;
-}
+}  */
 
 /**
  * Simple fade transition for magnific popup
@@ -802,6 +802,10 @@ input[type=date] {
   overflow-y: scroll;
   max-height: 450px;
   
+}
+
+.addNoticeComponent {
+    display: none;
 }
 
 

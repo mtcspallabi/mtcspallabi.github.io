@@ -75,6 +75,7 @@ $(document).ready(function(){
         offset: '50%'   
     });
     
+    /*
     $('.js--wp-2').waypoint(function(direction){
         $('.js--wp-2').addClass('animated fadeInUp');
     },{
@@ -85,7 +86,7 @@ $(document).ready(function(){
         $('.js--wp-3').addClass('animated fadeInDown');
     },{
         offset: '50%'   
-    });
+    }); */
     
     /* Mobile Nav */
     

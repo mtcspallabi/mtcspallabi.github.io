@@ -121,7 +121,7 @@ $(document).ready(function() {
                   
 function createContent() {
     
-    const grouping = _.groupBy(notices, element => element.date.substring(0, 10))
+    const grouping = _.groupBy(notices, element => element.date.substring(0, 11))
     const groupeByDateNotices = _.map(grouping, (items, date) => ({
                           date: date,
                           notices: items

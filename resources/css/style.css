@@ -221,6 +221,32 @@ header {
     background-attachment: fixed;
 }
 
+.header-text {
+    position: absolute;
+    width: 80vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%,-50%);
+    text-align: center;
+}
+
+.header-primary {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header-primary-main {
+    display: block;
+    font-size: 110%;
+    font-weight: 700;
+}
+
+.header-primary-sub {
+     display: block;
+    font-size: 70%;
+    font-weight: 700;
+}
+
 .hero-text-box {
     position: absolute;
     width: 65%;

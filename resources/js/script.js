@@ -19,6 +19,12 @@ $(document).ready(function(){
         $('html,body').animate({scrollTop:$('.js--section-plan').offset().top}, 1000);
     });
     
+     
+    $('.js--scroll-to-testimonials').click(function(event){
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$('.js--section-testimonials').offset().top}, 1000);
+    });
+    
     $('.js--scroll-to-start').click(function(event){
         event.preventDefault();
         $('html,body').animate({scrollTop:$('.js--section-features').offset().top}, 1000);

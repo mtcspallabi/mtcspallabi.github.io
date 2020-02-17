@@ -14,7 +14,7 @@ i18next
           header:{
               dialogue_header: 'Your child, it\'s our responsibility to develop his/her intellect.',
               school_name: 'Mother Teresa Catholic School, Estd-2011 .',
-              button_1: 'I\'m interested',
+              button_1: 'Parents\' opinion',
               button_2: 'Show me more'
           },
           sectionFeature:{
@@ -120,7 +120,7 @@ i18next
           header:{
               dialogue_header: 'সন্তান আপনার, তার মেধা\'র সুষ্ঠ বিকাশের দায়িত্ব আমাদের।',
               school_name:'মাদার তেরেজা কাথলিক স্কুল, স্থাপিত-২০১১ ইং।',
-              button_1: 'আমি আগ্রহী',
+              button_1: 'অভিভাবকগণের মতামত',
               button_2: 'বিস্তারিত দেখুন'
           },
           sectionFeature:{

@@ -178,6 +178,7 @@ input[type=submit] {
     border-radius: 200px;  
     -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;  
 /*    transition: background-color 0.2s, border 0.2s, color 0.2s;*/
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
     position: relative;
 }
@@ -215,13 +216,17 @@ input[type=submit] {
 /*   animation  */
 .btn:hover,
 input[type=submit]:hover {
+ -webkit-transform: translateY(-3px);
  transform: translateY(-3px);
+ -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .btn:active,
 input[type=submit]:active {
+ -webkit-transform: translateY(-1px);
  transform: translateY(-1px);
+ -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);    
 }
 
@@ -237,6 +242,7 @@ input[type=submit]:active {
   left: 0;
 
   z-index: -1;
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
@@ -245,23 +251,42 @@ input[type=submit]:active {
 }
 
 .btn:hover::after {
+  -webkit-transform: scaleX(1.4) scaleY(1.6);
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
 
 .btn-animated {
+  -webkit-animation: moveInBottom 0.5s ease-out 0.75s;
   animation: moveInBottom 0.5s ease-out 0.75s;
+  -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards;
 }
 
-@keyframes moveInBottom {
+@-webkit-keyframes moveInBottom {
   0% {
     opacity: 0;
+    -webkit-transform: translateY(30px);
     transform: translateY(30px);
   }
 
   100% {
     opacity: 1;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
     transform: translate(0);
   }
 }
@@ -287,6 +312,7 @@ header {
     width: 80vw;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-40%,-50%);
     transform: translate(-40%,-50%);
     text-align: center;
 }
@@ -294,6 +320,8 @@ header {
 .header-primary {
     color: #fff;
     text-transform: uppercase;
+    
+    -webkit-backface-visibility: hidden;
     
     backface-visibility: hidden;
 }
@@ -303,6 +331,8 @@ header {
     font-size: 110%;
     font-weight: 700;
     
+    -webkit-animation: moveInLeft 1s  ease-out;
+    
     animation: moveInLeft 1s  ease-out;
 }
 
@@ -311,21 +341,64 @@ header {
     font-size: 70%;
     font-weight: 700;
     
+    -webkit-animation: moveInRight 1s  ease-out;
+    
     animation: moveInRight 1s  ease-out;
 }
 
-@keyframes moveInLeft {
+@-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
+    -webkit-transform: translateX(-100px);
     transform: translateX(-100px);
   }
 
   80% {
+    -webkit-transform: translateX(10px);
     transform: translateX(10px);
   }
 
   100% {
     opacity: 1;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+
+  80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
+@-webkit-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+
+  80% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
     transform: translate(0);
   }
 }
@@ -333,15 +406,18 @@ header {
 @keyframes moveInRight {
   0% {
     opacity: 0;
+    -webkit-transform: translateX(100px);
     transform: translateX(100px);
   }
 
   80% {
+    -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
 
   100% {
     opacity: 1;
+    -webkit-transform: translate(0);
     transform: translate(0);
   }
 }
@@ -858,7 +934,6 @@ js--wp-3 {
 .mfp-fade.mfp-bg {
 	opacity: 0;
 	-webkit-transition: all 0.15s ease-out; 
-	-moz-transition: all 0.15s ease-out; 
 	transition: all 0.15s ease-out;
 }
 .mfp-fade.mfp-bg.mfp-ready {
@@ -871,7 +946,6 @@ js--wp-3 {
 .mfp-fade.mfp-wrap .mfp-content {
 	opacity: 0;
 	-webkit-transition: all 0.15s ease-out; 
-	-moz-transition: all 0.15s ease-out; 
 	transition: all 0.15s ease-out;
 }
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
@@ -910,8 +984,6 @@ body .mfp-wrap {
   margin: 20px auto;
 /*  text-align: center;*/
   border: 2px solid #DBDBDB;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
 }
 
@@ -966,10 +1038,7 @@ input[type=date] {
     z-index: 999;
     display: none;
     cursor: pointer;
-    -moz-transform: rotate(270deg);
     -webkit-transform: rotate(270deg);
-    -o-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
     transform: rotate(270deg);
     position: fixed;
     bottom: 50px;

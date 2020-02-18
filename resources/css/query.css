@@ -184,6 +184,10 @@
     .notice {
       padding: 10px 0;
     }
+    
+    .btn-animated {
+        margin-top: 15px;
+    }
         
 }
 

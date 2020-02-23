@@ -358,7 +358,7 @@
                             <label for="name" id="form_name">Name</label>
                         </div>
                         <div class="col span_2_of_3">
-                            <input type="text" name="name" id="name" placeholder="Your Name" required>
+                            <input type="text" name="name" id="name" placeholder="" required>
                         </div>
                     </div>
                      <div class="row">
@@ -366,7 +366,7 @@
                             <label for="email" id="form_email">Email</label>
                         </div>
                         <div class="col span_2_of_3">
-                            <input type="email" name="email" id="email" placeholder="Your Email" required>
+                            <input type="email" name="email" id="email" placeholder="" required>
                         </div>
                     </div>
                     <div class="row">
@@ -391,7 +391,7 @@
                             <label for="message" id="form_opinion">Your query / opinion</label>
                         </div>
                         <div class="col span_2_of_3">
-                            <textarea name="message" id="message" cols="25" rows="6" placeholder="Your message" ></textarea>
+                            <textarea name="message" id="message" cols="25" rows="6" placeholder="" ></textarea>
                         </div>
                     </div>
                     <div class="row">
@@ -404,12 +404,14 @@
                     </div>
                     <div class="row">
                         <div class="col span_1_of_3">
+                            <input type="hidden" id="subject" name="subject" value="Opinion of parents">
                             <label>&nbsp;</label>
                         </div>
                      <div class="col span_2_of_3">
                          <input  type="submit" value="Send it!"  id="btnSubmit">
                      </div>
                      </div>
+                     
                 </form>   
                </div>
                 
@@ -522,6 +524,7 @@
         <script src="resources/js/lang.js"></script>
         <script src="resources/js/script.js"></script>        
         <script src="resources/js/notice.js"></script>
+        <script src="resources/js/swiper-magnific-popup.js"></script>
         
         
     </body>

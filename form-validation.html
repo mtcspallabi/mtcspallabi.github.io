@@ -153,7 +153,7 @@
 
 
                  <li>
-                    <figure class="gallery-photo" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <figure class="gallery-photo" itemprop="associatedMedia" itemscope itemtype="http://schema.org/VideoObject">
                         <a  href="#" title="Annual Closing Ceremony" data-type="video" data-video='<div class="wrapper"><div class="video-wrapper"><iframe class="pswp__video" width="853" height="480" src="https://www.youtube.com/embed/tdSB8Zyzz7s" frameborder="0"  allowfullscreen></iframe></div></div>' >
                         <img src="resources/img/gallery-4.png" alt="Gallery-4" itemprop="thumbnail"></a>                      
                         <figcaption itemprop="caption description">Annual Closing Ceremony</figcaption>
@@ -171,7 +171,7 @@
                     </figure>
                 </li>
                 <li>
-                   <figure class="gallery-photo" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                   <figure class="gallery-photo" itemprop="associatedMedia" itemscope itemtype="http://schema.org/VideoObject">
                         <a  href="#" title="Annual Sports Ceremony Display"
                                        data-type="video" data-video='<div class="wrapper"><div class="video-wrapper"><iframe class="pswp__video" width="640" height="480" src="https://www.youtube.com/embed/NdHsGZTsUQ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>'><img src="resources/img/video-2.png" alt="Gallery-4" itemprop="thumbnail"></a>
                          <figcaption itemprop="caption description">Annual Sports Ceremony Display</figcaption>               
@@ -521,8 +521,8 @@
         gallery.init();
 
         // Enter full screen
-        let psAPI = gallery.ui.getFullscreenAPI();
-        psAPI.enter();
+//        let psAPI = gallery.ui.getFullscreenAPI();
+//        psAPI.enter();
 
          gallery.listen('beforeChange', function() {
           var currItem = $(gallery.currItem.container);
@@ -536,7 +536,7 @@
         });
 
         gallery.listen('close', function() {
-            psAPI.exit();
+            //psAPI.exit();
           $('.pswp__video').each(function() {
             $(this).attr('src', $(this).attr('src'));
           });

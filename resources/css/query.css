@@ -189,6 +189,11 @@
     .btn-animated {
         margin-top: 15px;
     }
+    
+    .gallery-showcase li {
+    width: 23%;
+
+}
         
 }
 

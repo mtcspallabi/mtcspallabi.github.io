@@ -573,6 +573,8 @@ header {
     display: block;
     float: left;
     width: 24%;
+    margin-left: 5px;
+    margin-bottom: 5px;
 }
 
 .gallery-photo {

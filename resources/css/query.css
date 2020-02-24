@@ -195,10 +195,9 @@
     }
     
     .video-wrapper iframe {
-      top: 35%;     
+      top: 38%;     
     }
 }
-
 
 /* Small phones from 0 to 480 px */
 @media only screen and (max-width: 480px) {

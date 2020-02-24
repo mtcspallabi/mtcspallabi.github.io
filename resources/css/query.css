@@ -195,7 +195,7 @@
     }
     
     .video-wrapper iframe {
-      top: 50%;     
+      top: 35%;     
     }
 }
 
@@ -218,6 +218,10 @@
     .logo {
         width: 50px;
         height: auto;
+    }
+    
+    .video-wrapper iframe {
+      top: 50%;     
     }
     
 }

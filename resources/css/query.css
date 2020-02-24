@@ -192,9 +192,11 @@
     
     .gallery-showcase li {
     width: 23%;
-
-}
-        
+    }
+    
+    .video-wrapper iframe {
+      top: 50%;     
+    }
 }
 
 

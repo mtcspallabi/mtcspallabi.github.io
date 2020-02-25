@@ -1,11 +1,11 @@
-  figcaption {
-          display: none;
-        }
+.gallery-showcase figcaption {
+  display: none;
+}
 
 .pswp__zoom-wrap {
   text-align: center;
   &:before {
-    content: '';
+    content: "";
     display: inline-block;
     height: 100%;
     vertical-align: middle;

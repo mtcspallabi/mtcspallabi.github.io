@@ -1,0 +1,26 @@
+{
+  "name": "mtcs",
+  "version": "1.0.0",
+  "description": "Mtcs Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtcspallabi/mtcspallabi.github.io.git"
+  },
+  "keywords": [
+    "mtcs",
+    "school"
+  ],
+  "author": "Alam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mtcspallabi/mtcspallabi.github.io/issues"
+  },
+  "homepage": "https://github.com/mtcspallabi/mtcspallabi.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

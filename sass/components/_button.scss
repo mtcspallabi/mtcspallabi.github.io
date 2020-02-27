@@ -1,0 +1,125 @@
+/* ---------------------------------------------- */
+/* Buttons */
+/* ---------------------------------------------- */
+
+.btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    /*    transition: background-color 0.2s, border 0.2s, color 0.2s;*/
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    position: relative;
+  }
+  &:active,
+  &:hover {
+    background-color: $color-orange-secondary;
+  }
+  &:hover {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  &:active {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  &:hover::after {
+    -webkit-transform: scaleX(1.4) scaleY(1.6);
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+  &-animated {
+    -webkit-animation: moveInBottom 0.5s ease-out 0.75s;
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+  }
+}
+
+input[type="submit"] {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  /*    transition: background-color 0.2s, border 0.2s, color 0.2s;*/
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  position: relative;
+  background-color: $color-orange-primary;
+  border: 1px solid $color-orange-primary;
+  color: $color-white;
+  margin-right: 15px;
+  &:hover {
+    background-color: $color-orange-secondary;
+    border: 1px solid $color-orange-secondary;
+
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  &:active {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.btn-full {
+  &:link,
+  &:visited {
+    background-color: $color-orange-primary;
+    border: 1px solid $color-orange-primary;
+    color: $color-white;
+    margin-right: 15px;
+  }
+  &:active,
+  &:hover {
+    border: 1px solid $color-orange-secondary;
+  }
+
+  &::after {
+    background-color: $color-orange-primary;
+  }
+}
+
+.btn-ghost {
+  &:link,
+  &:visited {
+    border: 1px solid $color-orange-primary;
+    color: $color-orange-primary;
+  }
+  &:active,
+  &:hover {
+    border: 1px solid $color-orange-secondary;
+    color: $color-white;
+  }
+}

@@ -1,0 +1,52 @@
+/**
+   *  Notice
+   */
+
+.white-popup {
+  position: relative;
+  background: $color-white;
+  padding: 10px;
+  width: auto;
+  max-width: 90%;
+  margin: 20px auto;
+  /*  text-align: center;*/
+  border: 2px solid #dbdbdb;
+  border-radius: 5px;
+}
+
+input[type="date"] {
+  padding: 3px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.search-center {
+  text-align: center;
+}
+
+.notice {
+  /*  border-bottom: 3px solid #e4e4e4;*/
+  border-bottom: 3px solid tranparent;
+  padding: 10px 35px;
+  & p {
+    line-height: 140%;
+  }
+  & h3:after {
+    display: block;
+    height: 2px;
+    background-color: #e4e4e4;
+    content: "";
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+}
+.popup-scroll {
+  /* Overflow Scroll */
+  overflow-y: scroll;
+  max-height: 450px;
+}
+
+.addNoticeComponent {
+  display: none;
+}

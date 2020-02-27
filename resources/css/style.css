@@ -295,7 +295,7 @@ input[type="submit"]:active {
 /* Header */
 /* ---------------------------------------------- */
 
-header {
+.header {
   background-image: -webkit-gradient(
       linear,
       left top,

@@ -308,7 +308,7 @@ input[type="submit"]:active {
     url(img/mcts.jpg);
   height: 100vh;
   background-size: cover;
-  background-position: left 60%;
+  background-position: center;
   background-attachment: fixed;
 }
 

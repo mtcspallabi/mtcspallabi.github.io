@@ -1,18 +1,4 @@
 $(document).ready(function() {
-  /* Sticky Nav */
-  $(".js--section-features").waypoint(
-    function(direction) {
-      if (direction == "down") {
-        $("nav").addClass("sticky");
-      } else {
-        $("nav").removeClass("sticky");
-      }
-    },
-    {
-      offset: "60px;"
-    }
-  );
-
   /*  Scroll on buttons */
 
   $(".js--scroll-to-plans").click(function(event) {
@@ -144,19 +130,46 @@ $(document).ready(function() {
     }
   );
 
+  /* Sticky Nav */
+  $(".js--section-features").waypoint(
+    function(direction) {
+      if (direction == "down") {
+        $("nav").addClass("sticky");
+        $("nav").css("background-color", "rgba(255, 255, 255, 0.98)");
+      } else {
+        $("nav").removeClass("sticky");
+        $("nav").css("background-color", "transparent");
+      }
+    },
+    {
+      offset: "60px;"
+    }
+  );
+
   /* Mobile Nav */
 
   $(".js--nav-icon").on("click", function(event) {
     event.preventDefault();
     var nav = $(".js--main-nav");
     var icon = $(".js--nav-icon i");
+    var rootNav = $("nav");
     nav.slideToggle(200);
     if (icon.hasClass("ion-android-menu")) {
       icon.addClass("ion-android-close");
       icon.removeClass("ion-android-menu");
+      if (!rootNav.hasClass("sticky")) {
+        rootNav.css("background-color", "rgba(255, 255, 255, 0.98)");
+        rootNav.css("-webkit-box-shadow", "0 2px 2px #efefef");
+        rootNav.css("box-shadow", "0 2px 2px #efefef");
+      }
     } else {
       icon.addClass("ion-android-menu");
       icon.removeClass("ion-android-close");
+      if (!rootNav.hasClass("sticky")) {
+        rootNav.css("background-color", "transparent");
+        rootNav.css("-webkit-box-shadow", "");
+        rootNav.css("box-shadow", "");
+      }
     }
   });
 

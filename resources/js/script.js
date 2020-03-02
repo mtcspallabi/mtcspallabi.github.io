@@ -164,9 +164,11 @@ $(document).ready(function() {
       }
     } else {
       $(".main-nav").css("display", "none");
-      $("nav").css("background-color", "rgba(255, 255, 255, 0.98)");
-      $("nav").css("-webkit-box-shadow", "0 2px 2px #efefef");
-      $("nav").css("box-shadow", "0 2px 2px #efefef");
+      /* if (!$("nav").hasClass("sticky")) {
+         $("nav").css("background-color", "rgba(255, 255, 255, 0.98)");
+         $("nav").css("-webkit-box-shadow", "0 2px 2px #efefef");
+         $("nav").css("box-shadow", "0 2px 2px #efefef");
+       } */
     }
   });
 

@@ -139,12 +139,31 @@ $(document).ready(function() {
       } else {
         $("nav").removeClass("sticky");
         $("nav").css("background-color", "transparent");
+        $("nav").css("-webkit-box-shadow", "");
+        $("nav").css("box-shadow", "");
       }
     },
     {
       offset: "60px;"
     }
   );
+
+  /* Window resize */
+
+  $(window).on("resize", function() {
+    var width = $(window).width();
+    if (width > 767) {
+      if (!$("nav").hasClass("sticky")) {
+        $("nav").css("background-color", "transparent");
+        $("nav").css("-webkit-box-shadow", "");
+        $("nav").css("box-shadow", "");
+        $(".main-nav").css("display", "block");
+        //console.log("width -" + width);
+      }
+    } else {
+      $(".main-nav").css("display", "none");
+    }
+  });
 
   /* Mobile Nav */
 

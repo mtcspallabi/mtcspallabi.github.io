@@ -133,14 +133,21 @@ $(document).ready(function() {
   /* Sticky Nav */
   $(".js--section-features").waypoint(
     function(direction) {
+      var icon = $(".js--nav-icon i");
       if (direction == "down") {
         $("nav").addClass("sticky");
         $("nav").css("background-color", "rgba(255, 255, 255, 0.98)");
+        icon.css("color", "#555");
       } else {
-        $("nav").removeClass("sticky");
-        $("nav").css("background-color", "transparent");
-        $("nav").css("-webkit-box-shadow", "");
-        $("nav").css("box-shadow", "");
+        if (icon.hasClass("ion-android-menu")) {
+          $("nav").removeClass("sticky");
+          $("nav").css("background-color", "transparent");
+          $("nav").css("-webkit-box-shadow", "");
+          $("nav").css("box-shadow", "");
+          icon.css("color", "#fff");
+        } else {
+          $("nav").removeClass("sticky");
+        }
       }
     },
     {
@@ -164,11 +171,6 @@ $(document).ready(function() {
       }
     } else {
       $(".main-nav").css("display", "none");
-      /* if (!$("nav").hasClass("sticky")) {
-         $("nav").css("background-color", "rgba(255, 255, 255, 0.98)");
-         $("nav").css("-webkit-box-shadow", "0 2px 2px #efefef");
-         $("nav").css("box-shadow", "0 2px 2px #efefef");
-       } */
     }
   });
 
@@ -187,6 +189,7 @@ $(document).ready(function() {
         rootNav.css("background-color", "rgba(255, 255, 255, 0.98)");
         rootNav.css("-webkit-box-shadow", "0 2px 2px #efefef");
         rootNav.css("box-shadow", "0 2px 2px #efefef");
+        icon.css("color", "#555");
       }
     } else {
       icon.addClass("ion-android-menu");
@@ -195,6 +198,7 @@ $(document).ready(function() {
         rootNav.css("background-color", "transparent");
         rootNav.css("-webkit-box-shadow", "");
         rootNav.css("box-shadow", "");
+        icon.css("color", "#fff");
       }
     }
   });

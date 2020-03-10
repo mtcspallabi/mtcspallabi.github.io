@@ -147,6 +147,10 @@ $(document).ready(function() {
           icon.css("color", "#fff");
         } else {
           $("nav").removeClass("sticky");
+          $("nav").css("background-color", "transparent");
+          $("nav").css("-webkit-box-shadow", "");
+          $("nav").css("box-shadow", "");
+          icon.css("color", "#fff");
         }
       }
     },

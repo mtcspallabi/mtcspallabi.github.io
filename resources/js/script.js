@@ -139,19 +139,15 @@ $(document).ready(function() {
         $("nav").css("background-color", "rgba(255, 255, 255, 0.98)");
         icon.css("color", "#555");
       } else {
-        // if (icon.hasClass("ion-android-menu")) {
-        //   $("nav").removeClass("sticky");
-        //   $("nav").css("background-color", "transparent");
-        //   $("nav").css("-webkit-box-shadow", "");
-        //   $("nav").css("box-shadow", "");
-        //   icon.css("color", "#fff");
-        // } else {
-        //   $("nav").removeClass("sticky");
-        //   $("nav").css("background-color", "transparent");
-        //   $("nav").css("-webkit-box-shadow", "");
-        //   $("nav").css("box-shadow", "");
-        //   icon.css("color", "#fff");
-        // }
+        $("nav").removeClass("sticky");
+        if (icon.hasClass("ion-android-menu")) {
+          $("nav").css("background-color", "transparent");
+          $("nav").css("-webkit-box-shadow", "");
+          $("nav").css("box-shadow", "");
+          icon.css("color", "#fff");
+        } else {
+          icon.css("color", "#555");
+        }
       }
     },
     {

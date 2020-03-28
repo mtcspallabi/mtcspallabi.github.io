@@ -606,6 +606,19 @@ input[type="submit"]:active {
   transform: scale(1.03);
 }
 
+.container {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex-basis: 25%;
+  padding: 5px;
+}
+
 /* ---------------------------------------------- */
 /* Message */
 /* ---------------------------------------------- */
@@ -808,7 +821,24 @@ input[type="checkbox"] {
 *:focus {
   outline: none;
 }
+/* ---------------------------------------------- */
+/* Opinion Form */
+/* ---------------------------------------------- */
 
+.section-book {
+  background-image: linear-gradient(to right bottom, #e67e22, #cf6d17);
+}
+
+.book {
+  background-image: linear-gradient(105deg, transparent 50%, #fff 50%, #fff 0%),
+    url(../../resources/img/gallery-9.jpg);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(#000, 0.2);
+
+  height: 50rem;
+}
 /* ---------------------------------------------- */
 /* Footer */
 /* ---------------------------------------------- */

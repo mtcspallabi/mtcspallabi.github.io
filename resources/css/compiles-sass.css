@@ -69,10 +69,10 @@ body {
 /* Lincs */
 /* ---------------------------------------------- */
 a:link, a:visited {
-  color: #e67e22;
+  color: #7ed56f;
   text-decoration: none;
   padding-bottom: 1px;
-  border-bottom: 1px solid #e67e22;
+  border-bottom: 1px solid #7ed56f;
   -webkit-transition: border-bottom 0.2s, color 0.2s;
   transition: border-bottom 0.2s, color 0.2s; }
 
@@ -86,14 +86,14 @@ a:hover, a:active {
 .icon-big {
   font-size: 300%;
   display: block;
-  color: #e67e22;
+  color: #7ed56f;
   margin-bottom: 10px; }
 
 .icon-small {
   display: inline-block;
   width: 30px;
   text-align: center;
-  color: #e67e22;
+  color: #7ed56f;
   /*    color: $color-black;*/
   font-size: 115%;
   margin-right: 10px;
@@ -128,7 +128,7 @@ h2 {
   h2:after {
     display: block;
     height: 2px;
-    background-color: #e67e22;
+    background-color: #7ed56f;
     content: "";
     width: 100px;
     margin: 0 auto;
@@ -373,7 +373,7 @@ body .mfp-wrap {
       cursor: pointer; }
     .main-nav li a:hover,
     .main-nav li a:active {
-      border-bottom: 2px solid #e67e22; }
+      border-bottom: 2px solid #7ed56f; }
 
 /* Mobile Navi */
 .mobile-nav-icon {
@@ -422,7 +422,7 @@ body .mfp-wrap {
   position: relative; }
 
 .btn:active, .btn:hover {
-  background-color: #cf6d17; }
+  background-color: #28b485; }
 
 .btn:hover {
   -webkit-transform: translateY(-3px);
@@ -471,13 +471,13 @@ input[type="submit"] {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   position: relative;
-  background-color: #e67e22;
-  border: 1px solid #e67e22;
+  background-color: #7ed56f;
+  border: 1px solid #7ed56f;
   color: #fff;
   margin-right: 15px; }
   input[type="submit"]:hover {
-    background-color: #cf6d17;
-    border: 1px solid #cf6d17;
+    background-color: #28b485;
+    border: 1px solid #28b485;
     -webkit-transform: translateY(-3px);
     transform: translateY(-3px);
     -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -489,23 +489,23 @@ input[type="submit"] {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
 
 .btn-full:link, .btn-full:visited {
-  background-color: #e67e22;
-  border: 1px solid #e67e22;
+  background-color: #7ed56f;
+  border: 1px solid #7ed56f;
   color: #fff;
   margin-right: 15px; }
 
 .btn-full:active, .btn-full:hover {
-  border: 1px solid #cf6d17; }
+  border: 1px solid #28b485; }
 
 .btn-full::after {
-  background-color: #e67e22; }
+  background-color: #7ed56f; }
 
 .btn-ghost:link, .btn-ghost:visited {
-  border: 1px solid #e67e22;
-  color: #e67e22; }
+  border: 1px solid #7ed56f;
+  color: #7ed56f; }
 
 .btn-ghost:active, .btn-ghost:hover {
-  border: 1px solid #cf6d17;
+  border: 1px solid #28b485;
   color: #fff; }
 
 /* ---------------------------------------------- */
@@ -649,7 +649,7 @@ figcaption {
 
 .principle-message::first-letter {
   font-size: 200%;
-  color: #e67e22; }
+  color: #7ed56f; }
 
 /* ---------------------------------------------- */
 /* Location */
@@ -703,6 +703,16 @@ figcaption {
     opacity: 1;
     -webkit-transform: scale(1.03);
     transform: scale(1.03); }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.item {
+  flex-basis: 25%;
+  padding: 5px; }
 
 /* ---------------------------------------------- */
 /* Testimonial */
@@ -767,11 +777,11 @@ blockquote {
 .plan-price-admission {
   font-size: 80%;
   margin-bottom: 10px;
-  color: #e67e22; }
+  color: #7ed56f; }
 
 .plan-price-monthly {
   font-size: 80%;
-  color: #e67e22; }
+  color: #7ed56f; }
 
 /* ---------------------------------------------- */
 /* Footer */
@@ -848,3 +858,17 @@ footer p {
   text-align: center;
   margin-top: 30px;
   word-spacing: 2px; }
+
+/* ---------------------------------------------- */
+/* Opinion Form */
+/* ---------------------------------------------- */
+.section-book {
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+
+.book {
+  background-image: linear-gradient(105deg, transparent 50%, #fff 50%, #fff 0%), url(../../resources/img/gallery-9.jpg);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  height: 50rem; }

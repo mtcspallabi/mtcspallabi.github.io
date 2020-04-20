@@ -30,6 +30,8 @@ input[type="date"] {
   padding: 10px 35px;
   & p {
     line-height: 140%;
+    display: flex;
+    align-items: baseline;
   }
   & h3:after {
     display: block;
